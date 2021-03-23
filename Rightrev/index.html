@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Country Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
+     <script src="assignment.js"></script> 
+  </head>
+  <body>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Country Name" title="Type name of Country">
+    <div class="container">
+        <table id="myTable" class="CountryTable">
+            <thead>
+                <tr>
+                    <th>Name: <i class="fa fa-arrow-up" onclick="sortTable('CountryTable', 0)"></i></th>
+                    <th>Capital: <i class="fa fa-arrow-up" onclick="sortTable('CountryTable', 1)"></i></th>
+                    <th>Numeric Code: <i class="fa fa-arrow-up" onclick="sortTable('CountryTable', 2)"></i></th>
+                    <th>Population: <i class="fa fa-arrow-up" onclick="sortTable('CountryTable', 3)"></i></th>
+                    <th>Subregion: <i class="fa fa-arrow-up" onclick="sortTable('CountryTable', 4)"></i></th>
+                    <th>Flag: </th>
+                </tr>
+
+            </thead>
+            <tbody id="data"></tbody>
+        </table>
+    </div>
+  </body>
+</html>
+
